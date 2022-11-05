@@ -1,8 +1,67 @@
 body {
   margin: 0;
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   justify-content: center;
+  background-image: url(/img/luca-bravo-VowIFDxogG4-unsplash.jpg);
+  background-size: cover;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+#clocker {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 1em;
+}
+
+.clock {
+  display: grid;
+}
+
+.clock div {
+  margin: 5px;
+  position: relative;
+}
+
+.clock span {
+  height: 80px;
+  width: 100px;
+  opacity: 0.8;
+  color: #fff;
+  display: flex;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+  background: rgb(180, 129, 231);
+}
+
+.clock .text {
+  height: 30px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  background: rebeccapurple;
+}
+
+.clock #ampm {
+  bottom: 0;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+  background: rgb(135, 238, 135);
+  display: grid;
 }
